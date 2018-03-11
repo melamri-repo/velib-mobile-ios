@@ -13,6 +13,8 @@
 		1F723BD72055326E002B6283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BD62055326E002B6283 /* Assets.xcassets */; };
 		1F723BDA2055326E002B6283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BD82055326E002B6283 /* LaunchScreen.storyboard */; };
 		1F723BE52055326E002B6283 /* velib_mobile_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BE42055326E002B6283 /* velib_mobile_iosTests.swift */; };
+		AD7810EEA85C1C6F230D1ECF /* Pods_velib_mobile_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FA4EC7548EA2706822EA09 /* Pods_velib_mobile_iosTests.framework */; };
+		C59626FE2760B2B6CA15B612 /* Pods_velib_mobile_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2607333D5B46B24FED60425B /* Pods_velib_mobile_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07FA4EC7548EA2706822EA09 /* Pods_velib_mobile_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_velib_mobile_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F723BCC2055326E002B6283 /* velib-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "velib-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F723BCF2055326E002B6283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F723BD12055326E002B6283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		1F723BE02055326E002B6283 /* velib-mobile-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "velib-mobile-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F723BE42055326E002B6283 /* velib_mobile_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = velib_mobile_iosTests.swift; sourceTree = "<group>"; };
 		1F723BE62055326E002B6283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2607333D5B46B24FED60425B /* Pods_velib_mobile_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_velib_mobile_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FADA4D60E3FD6106F1AECAF /* Pods-velib-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-velib-mobile-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-velib-mobile-ios/Pods-velib-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		515D187E5C48B388151107EA /* Pods-velib-mobile-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-velib-mobile-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-velib-mobile-iosTests/Pods-velib-mobile-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		55694B29ABF6B968E8761930 /* Pods-velib-mobile-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-velib-mobile-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-velib-mobile-ios/Pods-velib-mobile-ios.release.xcconfig"; sourceTree = "<group>"; };
+		D630AAF9338E992209ECEDC9 /* Pods-velib-mobile-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-velib-mobile-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-velib-mobile-iosTests/Pods-velib-mobile-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59626FE2760B2B6CA15B612 /* Pods_velib_mobile_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7810EEA85C1C6F230D1ECF /* Pods_velib_mobile_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				1F723BCE2055326E002B6283 /* velib-mobile-ios */,
 				1F723BE32055326E002B6283 /* velib-mobile-iosTests */,
 				1F723BCD2055326E002B6283 /* Products */,
+				7EC92BCFFC868A4E9B4BF0C5 /* Pods */,
+				8E44D5D449956053B77062AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = "velib-mobile-iosTests";
 			sourceTree = "<group>";
 		};
+		7EC92BCFFC868A4E9B4BF0C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FADA4D60E3FD6106F1AECAF /* Pods-velib-mobile-ios.debug.xcconfig */,
+				55694B29ABF6B968E8761930 /* Pods-velib-mobile-ios.release.xcconfig */,
+				D630AAF9338E992209ECEDC9 /* Pods-velib-mobile-iosTests.debug.xcconfig */,
+				515D187E5C48B388151107EA /* Pods-velib-mobile-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E44D5D449956053B77062AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2607333D5B46B24FED60425B /* Pods_velib_mobile_ios.framework */,
+				07FA4EC7548EA2706822EA09 /* Pods_velib_mobile_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F723BE92055326E002B6283 /* Build configuration list for PBXNativeTarget "velib-mobile-ios" */;
 			buildPhases = (
+				A30152F3D9883258B82E863B /* [CP] Check Pods Manifest.lock */,
 				1F723BC82055326E002B6283 /* Sources */,
 				1F723BC92055326E002B6283 /* Frameworks */,
 				1F723BCA2055326E002B6283 /* Resources */,
+				01068FABB5F1F75C5ECF4DF7 /* [CP] Embed Pods Frameworks */,
+				D330671D290E6A76AEEB6150 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F723BEC2055326E002B6283 /* Build configuration list for PBXNativeTarget "velib-mobile-iosTests" */;
 			buildPhases = (
+				8493BAE7E3AA3479517D8E9B /* [CP] Check Pods Manifest.lock */,
 				1F723BDC2055326E002B6283 /* Sources */,
 				1F723BDD2055326E002B6283 /* Frameworks */,
 				1F723BDE2055326E002B6283 /* Resources */,
+				D5AC2DFEE4CF2A37192E3B42 /* [CP] Embed Pods Frameworks */,
+				DF004B5CDA5E422AEEA47158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,105 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01068FABB5F1F75C5ECF4DF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-velib-mobile-ios/Pods-velib-mobile-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8493BAE7E3AA3479517D8E9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-velib-mobile-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30152F3D9883258B82E863B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-velib-mobile-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D330671D290E6A76AEEB6150 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-velib-mobile-ios/Pods-velib-mobile-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5AC2DFEE4CF2A37192E3B42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-velib-mobile-iosTests/Pods-velib-mobile-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF004B5CDA5E422AEEA47158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-velib-mobile-iosTests/Pods-velib-mobile-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F723BC82055326E002B6283 /* Sources */ = {
@@ -351,6 +488,7 @@
 		};
 		1F723BEA2055326E002B6283 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FADA4D60E3FD6106F1AECAF /* Pods-velib-mobile-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +504,7 @@
 		};
 		1F723BEB2055326E002B6283 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55694B29ABF6B968E8761930 /* Pods-velib-mobile-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +520,7 @@
 		};
 		1F723BED2055326E002B6283 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D630AAF9338E992209ECEDC9 /* Pods-velib-mobile-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +538,7 @@
 		};
 		1F723BEE2055326E002B6283 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515D187E5C48B388151107EA /* Pods-velib-mobile-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
