@@ -114,13 +114,13 @@ class VelibMainViewController: UIViewController, UITableViewDelegate {
         } else {
             list = velibs.value
         }
-        if !searchedText.isEmpty {
+        if !searchedText.isEmpty && searchedText.lengthOfBytes(using: .utf8) >= 3 {
             list = filterStandsByName(velibs: list, text: searchedText)
         }
         return list
     }
     func filterStandsByName(velibs: [VelibModel], text: String) -> [VelibModel] {
-        let list: [VelibModel] = filtredStands.value.filter { (velib) in
+        let list: [VelibModel] = velibs.filter { (velib) in
             velib.name?.lowercased().contains(text.lowercased()) == true
         }
         return list
@@ -128,6 +128,7 @@ class VelibMainViewController: UIViewController, UITableViewDelegate {
     func searchByName(searchText: String) -> [VelibModel] {
         var list: [VelibModel] = []
         if searchText.isEmpty || searchText.lengthOfBytes(using: .utf8) < 3 {
+            searchedText = ""
             list = filterStands()
         } else if searchText.lengthOfBytes(using: .utf8) >= 3 {
             searchedText = searchText
@@ -143,6 +144,7 @@ extension VelibMainViewController: UISearchBarDelegate {
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchedText = ""
+        searchBar.text = ""
         filtredStands.accept(filterStands())
     }
 }
