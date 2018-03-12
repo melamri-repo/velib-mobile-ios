@@ -89,7 +89,7 @@ class VelibMainViewController: UIViewController, UITableViewDelegate {
     }
     // MARK: -TableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 280
     }
     // MARK: -Actions
     @IBAction func segmentedControlPressed(_ sender: Any) {

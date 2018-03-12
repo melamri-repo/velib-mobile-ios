@@ -24,7 +24,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="MvG-zu-iUH"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="Mrl-G9-Nb1" id="3TN-Ax-FTJ"/>
                                 </connections>

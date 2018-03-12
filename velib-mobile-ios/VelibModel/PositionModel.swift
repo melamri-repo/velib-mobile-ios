@@ -9,12 +9,12 @@
 import UIKit
 
 struct PositionModel: Codable {
-    let position_x: Double?
-    let position_y: Double?
+    let lat: Double?
+    let lng: Double?
     /// CodingKeys
     enum CodingKeys: String, CodingKey {
-        case position_x
-        case position_y
+        case lat
+        case lng
     }
     /// init from decoder
     ///
@@ -22,8 +22,8 @@ struct PositionModel: Codable {
     /// - Throws: error
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        position_x = try values.decodeIfPresent(Double.self, forKey: .position_x)
-        position_y = try values.decodeIfPresent(Double.self, forKey: .position_y)
+        lat = try values.decodeIfPresent(Double.self, forKey: .lat)
+        lng = try values.decodeIfPresent(Double.self, forKey: .lng)
     }
     /// Encode
     ///
@@ -31,7 +31,7 @@ struct PositionModel: Codable {
     /// - Throws: error
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(position_x, forKey: .position_x)
-        try container.encode(position_y, forKey: .position_y)
+        try container.encode(lat, forKey: .lat)
+        try container.encode(lng, forKey: .lng)
     }
 }
