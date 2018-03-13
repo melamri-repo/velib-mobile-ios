@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class VelibTableViewCell: UITableViewCell {
+class VelibTableViewCell: UITableViewCell{
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
@@ -30,21 +30,23 @@ class VelibTableViewCell: UITableViewCell {
         if let date = velib.last_update {
             dateLabel.text = "Depuis : "+formatDate(withTimeStamp: date)
         }
-        setupMapView(velib: velib)
+        //setupMapView(velib: velib)
     }
     func setupMapView(velib: VelibModel) {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate for Nantes city
-        let camera = GMSCameraPosition.camera(withLatitude: 47.218371, longitude: -1.553621000000021, zoom: 0)
-        let map = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        map.isMyLocationEnabled = true
-        mapView = map
-        
+        var position: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 47.218371, longitude: -1.553621000000021, zoom: 12)
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
         if let lat = velib.position?.lat, let long = velib.position?.lng {
             marker.position = CLLocationCoordinate2DMake(lat,long)
+            position = GMSCameraPosition.camera(withLatitude: lat,
+                                                longitude: long,
+                                                zoom: 12)
         }
+        // Create a GMSCameraPosition that tells the map to display the
+        let map = GMSMapView.map(withFrame: self.mapView.bounds, camera: position)
+        mapView = map
         if let name = velib.name {
             if !name.isEmpty {
                 marker.title = name

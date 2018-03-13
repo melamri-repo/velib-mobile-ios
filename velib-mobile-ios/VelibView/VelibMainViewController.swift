@@ -35,6 +35,7 @@ class VelibMainViewController: UIViewController, UITableViewDelegate {
         addObserverOnVelibs()
         getVelibs()
         bindVelibs()
+        didSelectAtVelibRow() 
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,9 +88,22 @@ class VelibMainViewController: UIViewController, UITableViewDelegate {
                 }
             }.disposed(by: disposeBag)
     }
+    /// Setup the thread cell tap handling
+    private func didSelectAtVelibRow() {
+        self.velibTableView
+            .rx
+            .modelSelected(VelibModel.self)
+            .subscribe(onNext: { velib in
+                if self.velibTableView.indexPathForSelectedRow != nil {
+                    let mapController = MapViewController()
+                    mapController.velib = velib
+                    self.navigationController?.pushViewController(mapController, animated: true)
+                }
+            }).disposed(by: disposeBag)
+    }
     // MARK: -TableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 280
+        return 44
     }
     // MARK: -Actions
     @IBAction func segmentedControlPressed(_ sender: Any) {

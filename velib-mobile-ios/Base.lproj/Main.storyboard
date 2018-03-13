@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mrl-G9-Nb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtT-Aw-hRC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="wgO-dW-Y6C">
+            <objects>
+                <viewController id="mtT-Aw-hRC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTm-Yz-Fmy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyW-2k-4UY">
+                                <rect key="frame" x="164" y="328.5" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MU8-G7-IOR"/>
+                                    <constraint firstAttribute="width" constant="46" id="beF-Rh-4yR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="86Y-wZ-YWD" kind="presentation" id="QG0-uq-j0B"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="raV-OP-WVz">
+                                <rect key="frame" x="214" y="257" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zyW-2k-4UY" firstAttribute="centerX" secondItem="NnF-bf-s4z" secondAttribute="centerX" id="F7u-Wc-s5h"/>
+                            <constraint firstItem="zyW-2k-4UY" firstAttribute="centerY" secondItem="NnF-bf-s4z" secondAttribute="centerY" id="f7H-Ky-NXH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NnF-bf-s4z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKP-ZI-BPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1564" y="-71"/>
+        </scene>
         <!--Velib Main View Controller-->
         <scene sceneID="Plh-vK-axX">
             <objects>
@@ -75,10 +112,25 @@
             </objects>
             <point key="canvasLocation" x="412" y="-70.614692653673174"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map View Controller-->
+        <scene sceneID="aVQ-Y2-1ZJ">
+            <objects>
+                <viewController id="Gmf-F0-GVE" customClass="MapViewController" customModule="velib_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pA2-HV-7R5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xTC-TY-yqh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q45-t5-aCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="-72"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="De4-71-2YW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="86Y-wZ-YWD" sceneMemberID="viewController">
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="86Y-wZ-YWD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M3o-lg-7Ab">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
