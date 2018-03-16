@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5B95A8205BEDB10024CCF0 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B95A7205BEDB10024CCF0 /* MarkerView.xib */; };
+		1F5B95AA205BEDBF0024CCF0 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B95A9205BEDBF0024CCF0 /* MarkerView.swift */; };
+		1F5B95AC205BFF920024CCF0 /* VelibHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B95AB205BFF920024CCF0 /* VelibHelper.swift */; };
 		1F723BD02055326E002B6283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BCF2055326E002B6283 /* AppDelegate.swift */; };
-		1F723BD22055326E002B6283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BD12055326E002B6283 /* ViewController.swift */; };
+		1F723BD22055326E002B6283 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BD12055326E002B6283 /* MainViewController.swift */; };
 		1F723BD52055326E002B6283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BD32055326E002B6283 /* Main.storyboard */; };
 		1F723BD72055326E002B6283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BD62055326E002B6283 /* Assets.xcassets */; };
 		1F723BDA2055326E002B6283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BD82055326E002B6283 /* LaunchScreen.storyboard */; };
@@ -19,8 +22,6 @@
 		1F723BF9205541CA002B6283 /* VelibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F723BF8205541C9002B6283 /* VelibTableViewCell.xib */; };
 		1F723BFB205544F0002B6283 /* VelibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BFA205544F0002B6283 /* VelibTableViewCell.swift */; };
 		1F723BFE20554B41002B6283 /* VelibMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F723BFD20554B41002B6283 /* VelibMainViewController.swift */; };
-		402F498B205697170002897F /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F498A205697170002897F /* NoDataTableViewCell.swift */; };
-		402F498D205697210002897F /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 402F498C205697210002897F /* NoDataTableViewCell.xib */; };
 		4079F1542056B7BA00315ADD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4079F1532056B7BA00315ADD /* MapKit.framework */; };
 		4079F15B2056BC2200315ADD /* GoogleMapsCore.framework in Sources */ = {isa = PBXBuildFile; fileRef = 4079F1592056BC2100315ADD /* GoogleMapsCore.framework */; };
 		4079F15C2056BC2200315ADD /* GoogleMaps.framework in Sources */ = {isa = PBXBuildFile; fileRef = 4079F15A2056BC2200315ADD /* GoogleMaps.framework */; };
@@ -42,9 +43,12 @@
 
 /* Begin PBXFileReference section */
 		07FA4EC7548EA2706822EA09 /* Pods_velib_mobile_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_velib_mobile_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5B95A7205BEDB10024CCF0 /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		1F5B95A9205BEDBF0024CCF0 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		1F5B95AB205BFF920024CCF0 /* VelibHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelibHelper.swift; sourceTree = "<group>"; };
 		1F723BCC2055326E002B6283 /* velib-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "velib-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F723BCF2055326E002B6283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F723BD12055326E002B6283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F723BD12055326E002B6283 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1F723BD42055326E002B6283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F723BD62055326E002B6283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F723BD92055326E002B6283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +63,6 @@
 		1F723BFA205544F0002B6283 /* VelibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelibTableViewCell.swift; sourceTree = "<group>"; };
 		1F723BFD20554B41002B6283 /* VelibMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelibMainViewController.swift; sourceTree = "<group>"; };
 		2607333D5B46B24FED60425B /* Pods_velib_mobile_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_velib_mobile_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		402F498A205697170002897F /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoDataTableViewCell.swift; path = ../../../../NoDataTableViewCell.swift; sourceTree = "<group>"; };
-		402F498C205697210002897F /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NoDataTableViewCell.xib; path = ../../../../NoDataTableViewCell.xib; sourceTree = "<group>"; };
 		4079F1532056B7BA00315ADD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4079F1552056BB9600315ADD /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		4079F1562056BB9600315ADD /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
@@ -95,6 +97,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5B95A3205BED2C0024CCF0 /* Velib */ = {
+			isa = PBXGroup;
+			children = (
+				1F723BF720554164002B6283 /* VelibView */,
+				1F723BF22055374E002B6283 /* VelibModel */,
+				1F723BEF20553611002B6283 /* VelibClient */,
+			);
+			path = Velib;
+			sourceTree = "<group>";
+		};
+		1F5B95A4205BED4C0024CCF0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B95A5205BED660024CCF0 /* MapView */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		1F5B95A5205BED660024CCF0 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B95A6205BED880024CCF0 /* MapMarkerCustomView */,
+				4079F1632057FD3000315ADD /* MapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		1F5B95A6205BED880024CCF0 /* MapMarkerCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B95A7205BEDB10024CCF0 /* MarkerView.xib */,
+				1F5B95A9205BEDBF0024CCF0 /* MarkerView.swift */,
+			);
+			path = MapMarkerCustomView;
+			sourceTree = "<group>";
+		};
 		1F723BC32055326E002B6283 = {
 			isa = PBXGroup;
 			children = (
@@ -123,15 +161,15 @@
 		1F723BCE2055326E002B6283 /* velib-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				1F723BF720554164002B6283 /* VelibView */,
-				1F723BF22055374E002B6283 /* VelibModel */,
-				1F723BEF20553611002B6283 /* VelibClient */,
+				1F5B95A4205BED4C0024CCF0 /* Map */,
+				1F5B95A3205BED2C0024CCF0 /* Velib */,
 				1F723BCF2055326E002B6283 /* AppDelegate.swift */,
-				1F723BD12055326E002B6283 /* ViewController.swift */,
+				1F723BD12055326E002B6283 /* MainViewController.swift */,
 				1F723BD32055326E002B6283 /* Main.storyboard */,
 				1F723BD62055326E002B6283 /* Assets.xcassets */,
 				1F723BD82055326E002B6283 /* LaunchScreen.storyboard */,
 				1F723BDB2055326E002B6283 /* Info.plist */,
+				1F5B95AB205BFF920024CCF0 /* VelibHelper.swift */,
 			);
 			path = "velib-mobile-ios";
 			sourceTree = "<group>";
@@ -167,7 +205,6 @@
 			children = (
 				1F723BFC20554AFD002B6283 /* VelibTableViewCells */,
 				1F723BFD20554B41002B6283 /* VelibMainViewController.swift */,
-				4079F1632057FD3000315ADD /* MapViewController.swift */,
 			);
 			path = VelibView;
 			sourceTree = "<group>";
@@ -177,8 +214,6 @@
 			children = (
 				1F723BF8205541C9002B6283 /* VelibTableViewCell.xib */,
 				1F723BFA205544F0002B6283 /* VelibTableViewCell.swift */,
-				402F498A205697170002897F /* NoDataTableViewCell.swift */,
-				402F498C205697210002897F /* NoDataTableViewCell.xib */,
 			);
 			path = VelibTableViewCells;
 			sourceTree = "<group>";
@@ -300,9 +335,9 @@
 			files = (
 				1F723BF9205541CA002B6283 /* VelibTableViewCell.xib in Resources */,
 				1F723BDA2055326E002B6283 /* LaunchScreen.storyboard in Resources */,
+				1F5B95A8205BEDB10024CCF0 /* MarkerView.xib in Resources */,
 				1F723BD72055326E002B6283 /* Assets.xcassets in Resources */,
 				1F723BD52055326E002B6283 /* Main.storyboard in Resources */,
-				402F498D205697210002897F /* NoDataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,14 +471,15 @@
 				4079F15B2056BC2200315ADD /* GoogleMapsCore.framework in Sources */,
 				4079F15C2056BC2200315ADD /* GoogleMaps.framework in Sources */,
 				1F723BF120553627002B6283 /* VelibClient.swift in Sources */,
-				1F723BD22055326E002B6283 /* ViewController.swift in Sources */,
+				1F5B95AA205BEDBF0024CCF0 /* MarkerView.swift in Sources */,
+				1F723BD22055326E002B6283 /* MainViewController.swift in Sources */,
 				1F723BF62055384D002B6283 /* PositionModel.swift in Sources */,
 				1F723BF420553761002B6283 /* VelibModel.swift in Sources */,
 				4079F1642057FD3000315ADD /* MapViewController.swift in Sources */,
 				1F723BFB205544F0002B6283 /* VelibTableViewCell.swift in Sources */,
 				1F723BD02055326E002B6283 /* AppDelegate.swift in Sources */,
-				402F498B205697170002897F /* NoDataTableViewCell.swift in Sources */,
 				1F723BFE20554B41002B6283 /* VelibMainViewController.swift in Sources */,
+				1F5B95AC205BFF920024CCF0 /* VelibHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
