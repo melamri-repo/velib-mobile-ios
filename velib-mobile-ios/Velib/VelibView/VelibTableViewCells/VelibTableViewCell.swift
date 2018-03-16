@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class VelibTableViewCell: UITableViewCell {
+/// Custom TableViewCell for Velib TableView
+class VelibTableViewCell: UITableViewCell{
+    /// MARK: -Components
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var mapView: GMSMapView!
+    /// set up cell
+    ///
+    /// - Parameter velib: <#velib description#>
     func setupCell(velib: VelibModel) {
         if let name = velib.name {
             if !name.isEmpty {
@@ -26,17 +33,10 @@ class VelibTableViewCell: UITableViewCell {
             statusLabel.text = status
         }
         if let date = velib.last_update {
-            dateLabel.text = "Depuis : "+formatDate(withTimeStamp: date)
+            dateLabel.text = "Depuis : "+VelibHelper.sharedInstance.formatDate(withTimeStamp: date)
         }
     }
-    func formatDate(withTimeStamp numberOfSeconds: Int) -> String {
-        let timestamp = numberOfSeconds != 0 ? Int(numberOfSeconds) : Int(0.0)
-        let timeInterval: TimeInterval = CDouble(timestamp)
-        let date = Date(timeIntervalSince1970: timeInterval)
-        let dateformatter = DateFormatter()
-        dateformatter.locale = NSLocale.current
-        let format = "HH:mm dd.MM.yyyy" //date format is based on the cell example from the PDF
-        dateformatter.dateFormat = format
-        return dateformatter.string(from: date)
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
 }

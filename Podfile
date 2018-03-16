@@ -7,6 +7,8 @@ target 'velib-mobile-ios' do
   pod 'Alamofire'
   pod 'RxAlamofire'
   pod 'RxCocoa', '~> 4.0'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   # Pods for velib-mobile-ios
 

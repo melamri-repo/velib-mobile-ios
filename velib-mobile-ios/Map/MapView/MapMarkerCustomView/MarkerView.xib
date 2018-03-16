@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-LightItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerView" customModule="velib_mobile_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BET-X2-RS1">
+                    <rect key="frame" x="5" y="30" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2K-GC-wy5">
+                    <rect key="frame" x="5" y="55" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-rO-Yse">
+                    <rect key="frame" x="5" y="5" width="240" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HJb-rO-Yse" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="3rj-Iv-lwb"/>
+                <constraint firstItem="L2K-GC-wy5" firstAttribute="trailing" secondItem="HJb-rO-Yse" secondAttribute="trailing" id="8SF-zQ-EQD"/>
+                <constraint firstItem="HJb-rO-Yse" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="C7b-wA-TK4"/>
+                <constraint firstItem="L2K-GC-wy5" firstAttribute="top" secondItem="BET-X2-RS1" secondAttribute="bottom" constant="5" id="PR9-7c-098"/>
+                <constraint firstItem="BET-X2-RS1" firstAttribute="trailing" secondItem="HJb-rO-Yse" secondAttribute="trailing" id="QWf-Xm-Vzb"/>
+                <constraint firstItem="L2K-GC-wy5" firstAttribute="leading" secondItem="HJb-rO-Yse" secondAttribute="leading" id="Yez-BZ-BnD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HJb-rO-Yse" secondAttribute="trailing" constant="5" id="b4v-Lx-Oy6"/>
+                <constraint firstItem="BET-X2-RS1" firstAttribute="leading" secondItem="HJb-rO-Yse" secondAttribute="leading" id="jNK-Wx-5iO"/>
+                <constraint firstItem="BET-X2-RS1" firstAttribute="top" secondItem="HJb-rO-Yse" secondAttribute="bottom" constant="5" id="u4m-NX-Ggx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth ">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="availableBikesLabel" destination="BET-X2-RS1" id="ztk-Df-dqf"/>
+                <outlet property="lastUpdateLabel" destination="L2K-GC-wy5" id="IWs-Z7-4I1"/>
+                <outlet property="velibNameLabel" destination="HJb-rO-Yse" id="JwA-pf-HGB"/>
+            </connections>
+        </view>
+    </objects>
+</document>
